@@ -1,0 +1,58 @@
+.reveal .slides section h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.reveal .slides section h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.reveal .slides section ul li {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 95%;
+}
+
+.reveal .slides section ul li ul li {
+  margin-top: 15px;
+  font-size: 80%;
+}
+
+.reveal .slides section p {
+  line-height: 1.6;
+}
+
+.reveal section img {
+  border: 0px;
+  box-shadow: none;
+}
+
+.reveal section code {
+  font-size: 82%;
+  padding: 0.2em 0.4em;
+  background: #fafbfc;
+  border: 2px solid #eaecef;
+  border-radius: 6px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.reveal pre code {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  background: #3f3f3f;
+}
+
+.reveal .has-green-background,
+.reveal .has-green-background span,
+.reveal .has-green-background h1,
+.reveal .has-green-background h2,
+.reveal .has-green-background h3,
+.reveal .has-green-background h4,
+.reveal .has-green-background h5,
+.reveal .has-green-background h6 {
+  color: #ffffff;
+}

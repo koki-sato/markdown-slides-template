@@ -1,0 +1,24 @@
+{
+  "name": "markdown-slides-template",
+  "version": "1.0.0",
+  "description": "Template for markdown slides",
+  "repository": "git@github.com:koki-sato/markdown-slides-template.git",
+  "author": "Koki Sato <s.4115.koki@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cp -LR src/* public",
+    "clean": "(rm -rf public || true) && mkdir -p public",
+    "deploy": "run-s clean build gh-pages",
+    "gh-pages": "gh-pages -d public",
+    "server": "http-server ./public -p 8000",
+    "start": "run-p watch server",
+    "watch": "run-s clean build watch:chokidar",
+    "watch:chokidar": "chokidar \"src/\" -c \"yarn run build\""
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "gh-pages": "^1.1.0",
+    "http-server": "^0.10.0",
+    "npm-run-all": "^4.1.2"
+  }
+}
